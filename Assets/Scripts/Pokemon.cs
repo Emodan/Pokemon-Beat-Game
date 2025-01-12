@@ -6,6 +6,7 @@ public class Pokemon : MonoBehaviour
 {
     private int health;
     private string type;
+    private string secondtype;
     private int actionPoints;
     private int attack;
     private int defense;
@@ -70,6 +71,11 @@ public class Pokemon : MonoBehaviour
     public string getType() 
     {
         return type;
+    }
+
+    public string getSecondType()
+    {
+        return secondtype;
     }
 
     public int getActionPoints()
@@ -149,6 +155,11 @@ public class Pokemon : MonoBehaviour
     public void setType(string type) 
     {
         this.type = type;
+    }
+
+    public void setSecondType(string secondtype)
+    {
+        this.secondtype = secondtype;
     }
 
     public void setActionPoints(int actionPoints)
